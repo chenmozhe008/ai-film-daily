@@ -1,6 +1,6 @@
 # AI创作信息日报
 
-面向影视导演、编导、叙事创作者、AIGC 内容团队的每日情报简报。
+> 面向影视导演、编导、叙事创作者、AIGC 内容团队的每日情报简报。
 
 ## 栏目结构
 1. **行业与平台动向** — 大模型、平台能力、融资、政策、生态变化
@@ -16,3 +16,24 @@
 daily/
   YYYY-MM-DD.md    # 每日日报
 ```
+
+## 欢迎参与
+
+这是一个开源项目，欢迎大家一起完善：
+
+- **采集源扩展**：发现好的信息源？提 Issue 或 PR
+- **内容纠错**：日报内容有误？随时指出
+- **栏目建议**：想新增或调整栏目？Discuss 里讨论
+- **工具推荐**：有好用的 AI 创作工具？分享出来
+
+## 贡献方式
+1. Fork 本仓库
+2. 创建分支 (`git checkout -b feature/xxx`)
+3. 提交修改 (`git commit -m 'add xxx'`)
+4. 推送分支 (`git push origin feature/xxx`)
+5. 提交 Pull Request
+
+或者直接在 [Issues](https://github.com/chenmozhe008/ai-creation-daily/issues) 和 [Discussions](https://github.com/chenmozhe008/ai-creation-daily/discussions) 里讨论。
+
+## 许可
+MIT License

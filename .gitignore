@@ -2,3 +2,9 @@
 *.swp
 *.swo
 *~
+.env
+*.pem
+*.key
+credentials.json
+secrets.json
+config.yaml
