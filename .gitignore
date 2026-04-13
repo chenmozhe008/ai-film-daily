@@ -1,10 +1,45 @@
-.DS_Store
-*.swp
-*.swo
-*~
+# Secrets & credentials
 .env
+.env.*
 *.pem
 *.key
 credentials.json
 secrets.json
 config.yaml
+openclaw.json
+token_usage_report.py
+
+# API keys & auth
+**/apiKey*
+**/api_key*
+**/secret*
+**/*credential*
+**/*token*.json
+
+# OpenClaw internal
+.openclaw/
+.openclaw.json
+*.bak
+*.bak.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+*.log
+/tmp/

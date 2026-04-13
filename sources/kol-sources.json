@@ -1,0 +1,143 @@
+{
+  "version": "1.0",
+  "updated": "2026-04-01",
+  "groups": [
+    {
+      "id": "ai_filmmaking",
+      "name": "影视导演 / 叙事 / AI Filmmaking",
+      "priority": "high",
+      "focus": [
+        "AI filmmaking",
+        "storyboard",
+        "previs",
+        "narrative",
+        "short film",
+        "director workflow"
+      ],
+      "notes": "优先找持续发布 AI 短片、叙事表达、镜头语言、预演流程的创作者账号",
+      "seed_accounts": [
+        {
+          "handle": "RunwayML",
+          "kind": "official_or_ecosystem"
+        },
+        {
+          "handle": "LumaLabsAI",
+          "kind": "official_or_ecosystem"
+        },
+        {
+          "handle": "pika_labs",
+          "kind": "official_or_ecosystem"
+        },
+        {
+          "handle": "Kling_ai",
+          "kind": "official_or_ecosystem"
+        }
+      ]
+    },
+    {
+      "id": "ai_image_visual",
+      "name": "AI 图片 / 视觉风格 / 角色设定",
+      "priority": "high",
+      "focus": [
+        "midjourney",
+        "flux",
+        "visual style",
+        "character design",
+        "key visual",
+        "poster"
+      ],
+      "notes": "优先找稳定发风格实验、角色一致性、KV/海报、商业视觉案例的账号",
+      "seed_accounts": [
+        {
+          "handle": "midjourney",
+          "kind": "official_or_ecosystem"
+        },
+        {
+          "handle": "BlackForestLabs",
+          "kind": "official_or_ecosystem"
+        },
+        {
+          "handle": "ideogram_ai",
+          "kind": "official_or_ecosystem"
+        },
+        {
+          "handle": "RecraftAI",
+          "kind": "official_or_ecosystem"
+        }
+      ]
+    },
+    {
+      "id": "workflow_comfyui",
+      "name": "Workflow / ComfyUI / 技术向创作方法",
+      "priority": "high",
+      "focus": [
+        "ComfyUI",
+        "workflow",
+        "node",
+        "LoRA",
+        "character consistency",
+        "image to video"
+      ],
+      "notes": "优先找分享节点、参数、链路、可复用工作流的账号/仓库/社区帖子",
+      "seed_accounts": []
+    },
+    {
+      "id": "postproduction_efficiency",
+      "name": "后期 / 剪辑 / 音频 / 提效",
+      "priority": "medium",
+      "focus": [
+        "editing",
+        "capcut",
+        "premiere ai",
+        "elevenlabs",
+        "voice",
+        "subtitle",
+        "restoration"
+      ],
+      "notes": "优先找与剪辑、配音、字幕、修复、提效相关的 AI 方法来源",
+      "seed_accounts": [
+        {
+          "handle": "capcutapp",
+          "kind": "official_or_ecosystem"
+        }
+      ]
+    }
+  ],
+  "selection_rules": [
+    "优先持续输出实测/案例/方法的账号，而不是只转新闻的账号",
+    "优先近30天仍活跃的账号",
+    "优先能服务影视/AIGC创作场景的账号",
+    "每两周复查一次，淘汰停更/跑偏账号"
+  ],
+  "first_watchlist_v1": {
+    "note": "第一批优先关注池（根据已有线索先建立，后续继续替换/扩充；不记录发现来源）",
+    "accounts": {
+      "ai_filmmaking": [
+        "LumaLabsAI",
+        "RunwayML",
+        "Kling_ai",
+        "pika_labs",
+        "PixVerse_"
+      ],
+      "ai_image_visual": [
+        "midjourney",
+        "BlackForestLabs",
+        "ideogram_ai",
+        "RecraftAI"
+      ],
+      "workflow_comfyui": [
+        "OpenAI",
+        "GoogleDeepMind",
+        "Alibaba_Qwen"
+      ],
+      "postproduction_efficiency": [
+        "capcutapp"
+      ]
+    },
+    "rules": [
+      "先用第一批名单快速起跑，再逐步替换成更强的创作者/KOL名单",
+      "如果账号持续只发官方动态、不提供实测/案例/方法，可降级",
+      "优先保留能为 Workflow / 案例 / 灵感 板块供给内容的账号"
+    ]
+  }
+}

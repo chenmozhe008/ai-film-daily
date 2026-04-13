@@ -1,0 +1,112 @@
+{
+  "feeds": [
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "category": "official",
+      "priority": "highest"
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "category": "official",
+      "priority": "highest"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "category": "official",
+      "priority": "highest"
+    },
+    {
+      "name": "Anthropic Blog",
+      "url": "https://www.anthropic.com/rss/feed",
+      "category": "official",
+      "priority": "highest"
+    },
+    {
+      "name": "Runway Blog",
+      "url": "https://runwayml.com/blog/rss.xml",
+      "category": "official",
+      "priority": "highest"
+    },
+    {
+      "name": "Midjourney Updates",
+      "url": "https://www.midjourney.com/feed/",
+      "category": "official",
+      "priority": "highest"
+    },
+    {
+      "name": "Luma AI Blog",
+      "url": "https://lumalabs.ai/news/rss.xml",
+      "category": "official",
+      "priority": "high"
+    },
+    {
+      "name": "Pika Labs Blog",
+      "url": "https://pika.art/blog/rss.xml",
+      "category": "official",
+      "priority": "high"
+    },
+    {
+      "name": "Kling AI Blog",
+      "url": "https://www.klingai.com/blog/rss.xml",
+      "category": "official",
+      "priority": "high"
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "category": "media",
+      "priority": "high"
+    },
+    {
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "category": "media",
+      "priority": "high"
+    },
+    {
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/tag/ai/feed/",
+      "category": "media",
+      "priority": "medium"
+    },
+    {
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "category": "media",
+      "priority": "medium"
+    },
+    {
+      "name": "9to5Google",
+      "url": "https://9to5google.com/guides/google-ai/feed/",
+      "category": "media",
+      "priority": "medium"
+    },
+    {
+      "name": "Black Forest Labs Blog",
+      "url": "https://blog.blackforestlabs.ai/rss.xml",
+      "category": "official",
+      "priority": "high"
+    },
+    {
+      "name": "Recraft AI Blog",
+      "url": "https://www.recraft.ai/blog/rss.xml",
+      "category": "official",
+      "priority": "medium"
+    },
+    {
+      "name": "Stability AI Blog",
+      "url": "https://stability.ai/blog/feed.xml",
+      "category": "official",
+      "priority": "medium"
+    },
+    {
+      "name": "Ideogram Blog",
+      "url": "https://ideogram.ai/blog/rss.xml",
+      "category": "official",
+      "priority": "medium"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "version": "1.2",
+  "updated": "2026-04-13",
+  "lists": [
+    {
+      "id": "official_ai_platforms",
+      "name": "官方 AI 平台 / 大模型",
+      "accounts": [
+        {"handle": "OpenAI", "verified": true, "note": "GPT, DALL-E, Sora"},
+        {"handle": "AnthropicAI", "verified": true, "note": "Claude"},
+        {"handle": "claudeai", "verified": true, "note": "Claude 助手产品号"},
+        {"handle": "ChatGPTapp", "verified": true, "note": "ChatGPT 对话 AI"},
+        {"handle": "sama", "verified": true, "note": "Sam Altman, OpenAI CEO"},
+        {"handle": "miramurati", "verified": true, "note": "Mira Murati, 前 OpenAI CTO"},
+        {"handle": "GoogleDeepMind", "verified": true, "note": "Gemini, Veo"},
+        {"handle": "GoogleAI", "verified": true, "note": "Google AI 研究"},
+        {"handle": "GoogleAIStudio", "verified": true, "note": "Google AI 开发平台"},
+        {"handle": "GoogleLabs", "verified": true, "note": "Google 实验室"},
+        {"handle": "stitchbygoogle", "verified": true, "note": "Google Labs 界面设计 AI"},
+        {"handle": "FlowbyGoogle", "verified": true, "note": "Google Flow AI"},
+        {"handle": "xai", "verified": true, "note": "Grok"},
+        {"handle": "imagine", "verified": true, "note": "Grok Imagine, xAI 图像生成"},
+        {"handle": "Alibaba_Qwen", "verified": true, "note": "通义千问"},
+        {"handle": "Alibaba_Wan", "verified": true, "note": "阿里万相大模型"},
+        {"handle": "Skywork_ai", "verified": true, "note": "昆仑万维 Skywork"},
+        {"handle": "MistralAI", "verified": true, "note": "Mistral 系列"},
+        {"handle": "NVIDIAAI", "verified": true, "note": "NVIDIA AI 平台"},
+        {"handle": "NVIDIAAIDev", "verified": true, "note": "NVIDIA AI 开发者"},
+        {"handle": "MetaAI", "verified": true, "note": "Meta AI, Llama"},
+        {"handle": "Microsoft365", "verified": true, "note": "微软办公套件"},
+        {"handle": "satyanadella", "verified": true, "note": "Satya Nadella, 微软 CEO"},
+        {"handle": "demishassabis", "verified": true, "note": "Demis Hassabis, DeepMind CEO"},
+        {"handle": "madebygoogle", "verified": true, "note": "Google 硬件"},
+        {"handle": "Adobe", "verified": true, "note": "Adobe Firefly / Creative Cloud AI"},
+        {"handle": "joannejang", "verified": true, "note": "Joanne Jang, OpenAI 产品负责人"},
+        {"handle": "joshwoodward", "verified": true, "note": "Josh Woodward, Google AI 产品VP"},
+        {"handle": "fidjissimo", "verified": true, "note": "Fidji Simo, Instacart CEO"},
+        {"handle": "joshm", "verified": true, "note": "Josh Miller, The Browser Company CEO"}
+      ]
+    },
+    {
+      "id": "creative_video_tools",
+      "name": "AI 视频创作工具",
+      "accounts": [
+        {"handle": "runwayml", "verified": true, "note": "Runway Gen 系列"},
+        {"handle": "LumaLabsAI", "verified": true, "note": "Dream Machine"},
+        {"handle": "pika_labs", "verified": true, "note": "Pika"},
+        {"handle": "Kling_ai", "verified": true, "note": "可灵 AI"},
+        {"handle": "PixVerse_", "verified": true, "note": "PixVerse"},
+        {"handle": "ViduAI_official", "verified": true, "note": "Vidu / 生数科技"},
+        {"handle": "hailuo_ai", "verified": true, "note": "海螺 AI / MiniMax"},
+        {"handle": "soraofficialapp", "verified": true, "note": "Sora（已停服，仍跟踪）"},
+        {"handle": "WonderDynamics", "verified": true, "note": "Wonder Studio（已被 Autodesk 收购）"},
+        {"handle": "WonderStudiosX", "verified": false, "note": "Wonder Studios AI 影视特效"},
+        {"handle": "HeyGen", "verified": true, "note": "HeyGen 数字人"},
+        {"handle": "HeyGen_Official", "verified": true, "note": "HeyGen 官方"},
+        {"handle": "SynthesiaIO", "verified": true, "note": "Synthesia AI 视频"},
+        {"handle": "moonvalley", "verified": false, "note": "Moonvalley AI 视频生成"},
+        {"handle": "thecosmos", "verified": false, "note": "Cosmos AI 视频/世界模型"},
+        {"handle": "OiiOii_AI", "verified": false, "note": "AI 动画生成 Make Animation Great Again"},
+        {"handle": "SyncroLeap", "verified": false, "note": "AI 视频工具"},
+        {"handle": "Medeo_AI", "verified": false, "note": "AI 媒体工具"},
+        {"handle": "rayisdoingfilm", "verified": false, "note": "Ray (movie arc) AI 影视创作者"}
+      ]
+    },
+    {
+      "id": "creative_image_tools",
+      "name": "AI 图片创作工具",
+      "accounts": [
+        {"handle": "midjourney", "verified": true, "note": "Midjourney"},
+        {"handle": "BlackForestLabs", "verified": true, "note": "FLUX 模型"},
+        {"handle": "ideogram_ai", "verified": true, "note": "Ideogram"},
+        {"handle": "recraftai", "verified": true, "note": "Recraft"},
+        {"handle": "StabilityAI", "verified": true, "note": "Stable Diffusion 系列"},
+        {"handle": "krea_ai", "verified": true, "note": "Krea AI"},
+        {"handle": "Magnific_AI", "verified": true, "note": "Magnific AI"},
+        {"handle": "robrombach", "verified": true, "note": "Robin Rombach, Stable Diffusion 作者, BFL.ai"},
+        {"handle": "artflow_ai", "verified": false, "note": "Artflow.ai AI 角色生成"},
+        {"handle": "lovart_ai", "verified": false, "note": "LovartAI AI 设计工具"},
+        {"handle": "topazlabs", "verified": false, "note": "Topaz Labs AI 图像增强"},
+        {"handle": "replicate", "verified": false, "note": "Replicate AI 模型托管平台"},
+        {"handle": "ring_hyacinth", "verified": false, "note": "Ring Hyacinth AI 艺术家"}
+      ]
+    },
+    {
+      "id": "audio_voice_music",
+      "name": "AI 音频/语音/音乐",
+      "accounts": [
+        {"handle": "elevenlabsio", "verified": true, "note": "ElevenLabs 语音"},
+        {"handle": "saborstudio", "verified": false, "note": "Suno — 官方 handle 不确定，用 web_search 兜底"},
+        {"handle": "udio", "verified": true, "note": "Udio 音乐"},
+        {"handle": "Hume_AI", "verified": true, "note": "Hume AI 语音"},
+        {"handle": "FishAudio", "verified": false, "note": "Fish Audio AI 语音合成"},
+        {"handle": "AutoPodFM", "verified": false, "note": "AutoPod AI 播客剪辑"}
+      ]
+    },
+    {
+      "id": "ai_creative_tools",
+      "name": "AI 创作辅助工具",
+      "accounts": [
+        {"handle": "morphic", "verified": true, "note": "Morphic Studio"},
+        {"handle": "theclapperapp", "verified": true, "note": "Clapper App"},
+        {"handle": "CapCutApp", "verified": true, "note": "剪映/CapCut"},
+        {"handle": "NotionHQ", "verified": true, "note": "Notion 协作平台"},
+        {"handle": "zapier", "verified": true, "note": "Zapier 自动化工作流"},
+        {"handle": "windsurf", "verified": false, "note": "Windsurf AI 编程工具"},
+        {"handle": "hero_ui", "verified": false, "note": "HeroUI UI 组件库"},
+        {"handle": "diabrowser", "verified": false, "note": "Dia AI 浏览器"},
+        {"handle": "Humane", "verified": false, "note": "Humane AI 硬件"},
+        {"handle": "flowith", "verified": false, "note": "Flowith AI 工作流"},
+        {"handle": "openclaw", "verified": false, "note": "OpenClaw AI 自动化代理"},
+        {"handle": "TopviewAIhq", "verified": false, "note": "TopviewAI AI 视频营销"},
+        {"handle": "shandianshuo", "verified": false, "note": "闪电说 端侧 AI 语音输入法"},
+        {"handle": "Accio_official", "verified": false, "note": "Accio AI B2B 采购代理"}
+      ]
+    },
+    {
+      "id": "kol_creators",
+      "name": "AIGC 创作者 KOL",
+      "accounts": [
+        {"handle": "venturetwins", "verified": false, "note": "Justine Moore, a16z AI 合伙人"},
+        {"handle": "ciguleva", "verified": false, "note": "Tatiana Tsiguleva, AI 行业分析"},
+        {"handle": "ArtificialAnlys", "verified": false, "note": "Artificial Analysis, AI 模型基准评测"},
+        {"handle": "NickADobos", "verified": false, "note": "Nick Dobos, AI 工作流专家"},
+        {"handle": "maxescu", "verified": false, "note": "Alex Patrascu, AI 内容创作者"},
+        {"handle": "notiansans", "verified": false, "note": "Always Generating, AI 创作者"},
+        {"handle": "bryanf0x", "verified": false, "note": "Bryan Fox, AI 创作者"},
+        {"handle": "JulianGoldieSEO", "verified": false, "note": "Julian Goldie, AI SEO"}
+      ]
+    },
+    {
+      "id": "kol_chinese",
+      "name": "中文 AI 博主 & 创业者",
+      "accounts": [
+        {"handle": "FuSheng_0306", "verified": false, "note": "傅盛, 猎豹移动 CEO"},
+        {"handle": "WaytoAGI", "verified": false, "note": "通往AGI之路 中文 AGI 社区"},
+        {"handle": "AAAAAAAJtoy", "verified": false, "note": "AJ, 通往AGI之路 AI 知识库"},
+        {"handle": "bggg_ai", "verified": false, "note": "饼干哥哥AGI, AI 编程 / n8n 工作流 / AI 绘画"},
+        {"handle": "PMbackttfuture", "verified": false, "note": "AI产品黄叔, 大厂 AI 产品顾问"},
+        {"handle": "brad_zhang2024", "verified": false, "note": "烟花老师, AI 社区发起人, AI 应用架构师"},
+        {"handle": "yaojingang", "verified": false, "note": "姚金刚, AI 教育与 AI 营销"},
+        {"handle": "canghe", "verified": false, "note": "苍何, Microsoft MVP, AI 出海 / AI 编程 / MCP"},
+        {"handle": "Cydiar404", "verified": false, "note": "Cydiar, AI 内容创作者"},
+        {"handle": "AxtonLiu", "verified": false, "note": "Axton, AI 技术博主"},
+        {"handle": "aziz4ai", "verified": false, "note": "AZIZ, AI 内容博主"},
+        {"handle": "Jinghui_Dong", "verified": false, "note": "Jim HuiHui, AI 博主"},
+        {"handle": "joshua_xu_", "verified": false, "note": "Joshua Xu, AI 博主"},
+        {"handle": "geekbb", "verified": false, "note": "Geek, 科技博主"},
+        {"handle": "underwoodxie96", "verified": false, "note": "underwood, AI prompts & workflows"},
+        {"handle": "juliewdesign_", "verified": false, "note": "Julie W. Design, AI 设计博主"},
+        {"handle": "chaseleantj", "verified": false, "note": "Chase Lean, AI 内容博主"}
+      ]
+    }
+  ],
+  "keyword_tracks": {
+    "ai_filmmaking": [
+      "AI filmmaking",
+      "AI short film",
+      "previs ai",
+      "storyboard ai",
+      "director ai workflow"
+    ],
+    "ai_image": [
+      "Midjourney workflow",
+      "Flux workflow",
+      "character consistency",
+      "AI poster",
+      "visual development ai"
+    ],
+    "ai_video": [
+      "Kling",
+      "Seedance",
+      "Runway Gen-4",
+      "Veo",
+      "image to video",
+      "camera control ai"
+    ],
+    "workflow": [
+      "ComfyUI workflow",
+      "ComfyUI node",
+      "LoRA workflow",
+      "consistent character workflow",
+      "video workflow"
+    ]
+  },
+  "rules": [
+    "账号池/List 用于稳定获取，关键词轨用于发现新热点",
+    "两路结果进入同一个候选池后统一去重",
+    "即梦/Seedance 等属于动态热点示例，不作为永久强制词",
+    "2026-04-13: 合并用户提供的 78 个账号清单（来源 @LumiRoamAIFilm 关注列表），去重后新增约 40 个账号",
+    "所有 handle 已通过 web_search 交叉验证（2026-04-07），新增账号待后续验证"
+  ]
+}
