@@ -33,7 +33,7 @@ daily/
 4. 推送分支 (`git push origin feature/xxx`)
 5. 提交 Pull Request
 
-或者直接在 [Issues](https://github.com/chenmozhe008/ai-creation-daily/issues) 和 [Discussions](https://github.com/chenmozhe008/ai-creation-daily/discussions) 里讨论。
+或者直接在 [Issues](https://github.com/chenmozhe008/ai-film-creation-daily/issues) 和 [Discussions](https://github.com/chenmozhe008/ai-film-creation-daily/discussions) 里讨论。
 
 ## 许可
 MIT License
