@@ -5,7 +5,7 @@ description: Generate, test, backfill, improve, and schedule the AI creative dai
 
 # AI Creative Daily Cloud Skill
 
-This repository copy is the cloud-runnable rule source. Keep it small, operational, and synchronized with the local Codex skill.
+This repository copy is the cloud-runnable public rule source. Keep it small, operational, and synchronized with the local Codex skill. Do not store personal identifiers, private Feishu tokens, app secrets, user IDs, chat IDs, or document IDs in this public file.
 
 ## Daily Goal
 
@@ -48,10 +48,9 @@ If Section 3 or 4 is weak, run a second pass before writing. Search X handles di
 
 - Bootstrap cloud Lark CLI with `bash ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh`.
 - Do not print secrets.
-- Main index doc token: `CM90deQCUomWgFxuGZwcun8an8d`.
-- Daily card chat id: `oc_c995c8a2b1f9bef29d1fe8e2d3667ccf`.
-- User open_id for full access: `ou_0816cf0e8247b3ac4d1b91a14cea83e5`.
-- After creating or updating a daily doc, add that user as `full_access` and set public sharing to internet anyone-with-link can read. If permission setting fails, stop before sending.
+- Required Feishu identifiers must come from private environment variables or the calling automation prompt, not from this public repository.
+- Recommended environment variable names: `FEISHU_DAILY_INDEX_TOKEN`, `FEISHU_DAILY_CHAT_ID`, `FEISHU_DAILY_USER_OPEN_ID`.
+- After creating or updating a daily doc, add the configured user as `full_access` and set public sharing to internet anyone-with-link can read. If permission setting fails, stop before sending.
 - Push exactly one Feishu interactive card with the daily report link only. Do not send the total index link and do not send a bare link.
 
 ## Quality Gates
