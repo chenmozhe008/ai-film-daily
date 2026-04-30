@@ -1,0 +1,112 @@
+name: AI Daily Cloud Smoke
+
+on:
+  schedule:
+    # 08:05 Asia/Shanghai. GitHub cron uses UTC.
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Report date to test (YYYY-MM-DD)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+      FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+      FEISHUAPPSECRET: ${{ secrets.FEISHUAPPSECRET }}
+      FEISHU_DAILY_INDEX_TOKEN: ${{ secrets.FEISHU_DAILY_INDEX_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve report date
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          if [ -z "$DATE" ]; then
+            DATE=$(TZ=Asia/Shanghai date +%Y-%m-%d)
+          fi
+          echo "DATE=$DATE" >> "$GITHUB_ENV"
+          echo "Testing date: $DATE"
+
+      - name: Verify public rule files
+        run: |
+          test -s ai-creative-daily/SKILL.md
+          test -s ai-creative-daily/scripts/build_x_query_pack.py
+          test -s ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh
+          test -s sources/x-lists.json
+
+      - name: Verify X query pack is creator-first
+        run: |
+          python3 ai-creative-daily/scripts/build_x_query_pack.py --date "$DATE" --format text > /tmp/x-query-pack.txt
+          head -80 /tmp/x-query-pack.txt
+          first_block=$(grep -m1 '^# ' /tmp/x-query-pack.txt || true)
+          echo "First block: $first_block"
+          echo "$first_block" | grep 'kol_creators'
+          grep -m1 '^# kol_chinese' /tmp/x-query-pack.txt
+          if head -80 /tmp/x-query-pack.txt | grep -q '^# official_ai_platforms'; then
+            echo "::error::official_ai_platforms appeared before creator/KOL blocks"
+            exit 1
+          fi
+
+      - name: Check Feishu secret presence without printing value
+        run: |
+          if [ -n "${FEISHU_APP_ID:-}" ]; then
+            echo "Feishu app id present: true"
+          else
+            echo "Feishu app id present: false"
+            echo "Skipping Feishu CLI check because no app id is configured."
+          fi
+          if [ -n "${FEISHU_APP_SECRET:-}" ] || [ -n "${FEISHUAPPSECRET:-}" ]; then
+            echo "Feishu secret present: true"
+          else
+            echo "Feishu secret present: false"
+            echo "Skipping Feishu CLI check because no secret is configured."
+          fi
+          if [ -n "${FEISHU_DAILY_INDEX_TOKEN:-}" ]; then
+            echo "Feishu daily index token present: true"
+          else
+            echo "Feishu daily index token present: false"
+            echo "Skipping Feishu index read because no index token is configured."
+          fi
+
+      - name: Install and check lark-cli when secret exists
+        run: |
+          if { [ -z "${FEISHU_APP_SECRET:-}" ] && [ -z "${FEISHUAPPSECRET:-}" ]; } || [ -z "${FEISHU_APP_ID:-}" ]; then
+            echo "Skipping lark-cli check because Feishu app credentials are incomplete."
+            exit 0
+          fi
+          bash ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh
+          lark-cli api GET /bot/v3/info --as bot >/tmp/bot-info.json
+          test -s /tmp/bot-info.json
+          echo "Bot info readable: true"
+
+      - name: Read Feishu index when secret exists
+        run: |
+          if { [ -z "${FEISHU_APP_SECRET:-}" ] && [ -z "${FEISHUAPPSECRET:-}" ]; } || [ -z "${FEISHU_APP_ID:-}" ] || [ -z "${FEISHU_DAILY_INDEX_TOKEN:-}" ]; then
+            echo "Skipping Feishu index read because required Feishu environment variables are incomplete."
+            exit 0
+          fi
+          bash ai-creative-daily/scripts/bootstrap_lark_cli_cloud.sh
+          lark-cli docx blocks list --document-id "$FEISHU_DAILY_INDEX_TOKEN" --as bot >/tmp/index-blocks.json
+          test -s /tmp/index-blocks.json
+          echo "Feishu index readable: true"
+
+      - name: Quality smoke summary
+        run: |
+          {
+            echo "# AI Daily Cloud Smoke Summary"
+            echo
+            echo "- Date: $DATE"
+            echo "- X query pack: creator-first verified"
+            echo "- GitHub public files: present"
+            echo "- Feishu secret: checked without printing value"
+            echo
+            echo "## First X Query Blocks"
+            grep '^# ' /tmp/x-query-pack.txt | head -20
+          } >> "$GITHUB_STEP_SUMMARY"
