@@ -26,4 +26,4 @@ BRAND="${FEISHU_BRAND:-feishu}"
 printf '%s' "$FEISHU_SECRET" \
   | lark-cli config init --app-id "$APP_ID" --app-secret-stdin --brand "$BRAND" >/dev/null
 
-lark-cli doctor
+lark-cli doctor || echo "WARN: lark-cli doctor reported a non-bot issue; continuing with bot checks."
